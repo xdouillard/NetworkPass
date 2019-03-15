@@ -2,10 +2,13 @@
 
 import paramiko
 import time
+import warnings
 
-ip_address = "192.168.0.254"
-username = "root"
-password = "root1234"
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+
+ip_address = "192.168.0.11"
+username = "xavier"
+password = "@dmin1234"
 
 ssh_client = paramiko.SSHClient()
 ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
