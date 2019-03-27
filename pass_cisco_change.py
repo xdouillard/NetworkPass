@@ -2,17 +2,17 @@
 
 import paramiko
 import time
+from pass_generator import genpass
 
 ip_address = "192.168.2.2" 
 username = "admin"
-password = "test1234"
-new_pw = "admin1234"
+password = "test123"
+server_type = 
+new_pw = genpass()
 
 ssh_client = paramiko.SSHClient()
 ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy() )
 ssh_client.connect(hostname=ip_address,username=username,password=password)
-
-print ("Successfuly connected to"),  ip_address
 
 remote_connection = ssh_client.invoke_shell()
 

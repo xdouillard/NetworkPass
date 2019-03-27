@@ -24,7 +24,6 @@ remote_connection.send("echo " + (username) + ":" + (new_pw) + " | chpasswd\n")
 time.sleep(2)
 remote_connection.send("exit\n")
 
-output = remote_connection.recv(65535)
-print (output)
+time.slepp(1)
 
 ssh_client.close
