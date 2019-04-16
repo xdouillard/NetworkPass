@@ -39,4 +39,4 @@ def genpass():
             count += 1
 
     #Edition du mot de passe
-    print ("PASSWORD: %s" % password)
+    print("PASSWORD: %s" %password)
