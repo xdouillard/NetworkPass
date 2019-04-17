@@ -9,7 +9,7 @@ def genpass():
     lowercase = "abcdefghijklmnopqrstuvwxyz"
     uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     nums = "1234567890"
-    special_char = "!@#$%^&*()=+-~/[]{};:<>`"
+    special_char = "@#$%^*=+-~/[]{}"
 
     #Variables du mot de passe
     password = ''
@@ -39,4 +39,4 @@ def genpass():
             count += 1
 
     #Edition du mot de passe
-    print("PASSWORD: %s" %password)
+    return(password)
