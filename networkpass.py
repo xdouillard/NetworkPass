@@ -1,59 +1,35 @@
 #!/usr/bin/env python
+# -*- coding: Utf-8 -*-
 
-import paramiko     # Implementation of the SSHv2 protocol
-import socket           
-import getpass        # Gestion du mot de passe
-import sys                 # Donne l'accès à certaines variables
+"""Import des modules pour le fonction du script"""
+import os
+import sys
+import csv
+import datetime
+import shutil
+from pass_generator import genpass
 
-""" Création de la fonction input_password """
-def input_passwd():
+"""Définitions des fichiers CSV"""
+filename = "listing.csv"
+new_file = "csv/{0}_listing.csv".format(datetime.datetime.now())
 
-    mesg = "Password: "
-    old = getpass.getpass("Current %s" % mesg)
-    new = getpass.getpass("New %s" % mesg)
-    re_new = getpass.getpass("Retype New %s" % mesg)
-
-    if new != re_new:
-        print ("New RandomString does not match.")
-        exit(1)
-
-    return old, new
-
-""" Création de la fonction main """
-def main(argv):
-    if len(argv) < 2:
-        print ("USAGE : %s [srvlist.txt]" % argv[0])
-        exit(1)
-
-    srvlist_file = argv[1]
-
-    old_password, new_password = input_passwd()
-    print (new_password)
-
-    srvlist = open(srvlist_file, 'r')
-    lines = srvlist.readlines()
-
-    for line in lines:
-
-        line_sep = line.split()
-        ip = line_sep[0]
-        userlist = line_sep[1].split('/')
-        for user in userlist:
-
-            ssh = paramiko.SSHClient()
-            ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-            try:
-                ssh.connect(ip, username='root', password='%s' % (old_password), timeout=5)
-
-            except paramiko.ssh_exception.AuthenticationException:
-                result = "Authentication failed"
-            except socket.error:
-                result = "Socket error"
-            else:
-                ssh.exec_command('echo "%s:%s" | chpasswd' % (user, new_password))
-                result = "OK!"
-
-            print "%s %s : %s " % (ip, user, result)
-
-if __name__ == '__main__':
-    main(sys.argv)
+"""Fonction de lecture du listing réseau, de l'envoi des informations de connexions et d'écriture du nouveau listing"""
+with open(filename, "r") as listing:
+        csv_reader = csv.DictReader(listing)
+        with open(new_file, "w") as new_listing:
+                fieldnames = ["server", "ip", "user", "pw_user", "pw_suser", "old_pw"]
+                csv_writer = csv.DictWriter(new_listing, fieldnames=fieldnames)
+                csv_writer.writeheader()
+                for line in csv_reader:
+                        new_pw = genpass()
+                        script_to_use = "python3 pass_{0}_change.py {1} {2} {3} {4} {5}".format(line["server"],line["ip"],line["user"],line["pw_user"],new_pw,line["pw_suser"])
+                        os.system(script_to_use)
+                        csv_writer.writerow({
+                                "server": line["server"],
+                                 "ip": line["ip"], 
+                                 "user": line["user"], 
+                                 "pw_user": new_pw, 
+                                 "pw_suser": line["pw_suser"], 
+                                 "old_pw": line["pw_user"],
+                        })
+        shutil.copy(new_file, filename)
