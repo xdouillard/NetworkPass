@@ -3,4 +3,6 @@
 
 import sys
 
+ip_address = sys.argv[1]
+
 sys.exit(1)
