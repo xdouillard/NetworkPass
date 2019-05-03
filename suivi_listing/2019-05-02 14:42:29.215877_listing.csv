@@ -1,0 +1,7 @@
+server,ip,user,pw_user,pw_suser,old_pw
+cisco,192.168.0.1,admin,Sz3+Qf5$Iq7^,,admin1234
+cisco,192.168.0.2,admin,Sz3+Qf5$Iq7^,,admin1234
+cisco,192.168.0.3,admin,Zw1%Ft0}Xl6],,Rp0=Jj5-Rv8*
+linux,192.168.0.11,xavier,Kn9@Kz6@Hk7~,R@ot1982,@dmin1234
+linux,192.168.0.254,root,Rp0=Jj5-Rv8*,,root1234
+linux,192.168.1.1,xavier,Kn9@Kz6@Hk7~,root1234,test1234

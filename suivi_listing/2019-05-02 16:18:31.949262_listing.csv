@@ -1,0 +1,7 @@
+server,ip,user,pw_user,pw_suser,old_pw
+cisco,192.168.0.1,admin,Tr6+Ji0~Zm4%,,Ck8[Pm2@An1}
+cisco,192.168.0.2,admin,Ck8[Pm2@An1},,Kb0=Jt5{Ri4*
+cisco,192.168.0.3,admin,Tr6+Ji0~Zm4%,,Ck8[Pm2@An1}
+linux,192.168.0.11,xavier,Tr6+Ji0~Zm4%,R@ot1982,Ck8[Pm2@An1}
+linux,192.168.0.254,root,Tr6+Ji0~Zm4%,,Ck8[Pm2@An1}
+linux,192.168.1.1,xavier,Kb0=Jt5{Ri4*,root1234,Ck8[Pm2@An1}

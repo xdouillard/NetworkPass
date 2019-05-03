@@ -1,0 +1,7 @@
+server,ip,user,pw_user,pw_suser,old_pw
+cisco,192.168.0.1,admin,Bl6{Tw4+Ws4%,,Lq4/Uc9^Oy7]
+cisco,192.168.0.2,admin,Bl6{Tw4+Ws4%,,Lq4/Uc9^Oy7]
+cisco,192.168.0.3,admin,Bl6{Tw4+Ws4%,,Lq4/Uc9^Oy7]
+linux,192.168.0.11,xavier,xav1982,R@ot1982,xav1982
+linux,192.168.0.254,root,Bw1$Ia3/Bf7{,,Wd3=Yo8}Vm5+
+linux,192.168.1.1,xavier,xav1982,root1234,xav1982

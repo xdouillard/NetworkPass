@@ -1,7 +1,7 @@
 server,ip,user,pw_user,pw_suser,old_pw
-cisco,192.168.0.1,admin,Ec4#Qo5#Yr5@,,Qz9}Cc9=Zd3$
-cisco,192.168.0.2,admin,Ec4#Qo5#Yr5@,,Qz9}Cc9=Zd3$
-cisco,192.168.0.3,admin,Ec4#Qo5#Yr5@,,Qz9}Cc9=Zd3$
+cisco,192.168.0.1,admin,Qz9}Cc9=Zd3$,,Kp9$Bg6}Lt2@
+cisco,192.168.0.2,admin,Qz9}Cc9=Zd3$,,Kp9$Bg6}Lt2@
+cisco,192.168.0.3,admin,Qz9}Cc9=Zd3$,,Kp9$Bg6}Lt2@
 linux,192.168.0.11,xavier,Uz0$Ol7-It0],R@ot1982,xav1982
 linux,192.168.0.254,root,Bw1$Ia3/Bf7{,,Wd3=Yo8}Vm5+
 linux,192.168.1.1,xavier,Kp9$Bg6}Lt2@,root1234,Jm6-Xe2~Im6#

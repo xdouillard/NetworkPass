@@ -1,0 +1,7 @@
+server,ip,user,pw_user,pw_suser,old_pw
+cisco,192.168.0.1,admin,Kb0=Jt5{Ri4*,,Gt5/Rm5/Xr4^
+cisco,192.168.0.2,admin,Kb0=Jt5{Ri4*,,Gt5/Rm5/Xr4^
+cisco,192.168.0.3,admin,Kb0=Jt5{Ri4*,,Gt5/Rm5/Xr4^
+linux,192.168.0.11,xavier,Kb0=Jt5{Ri4*,R@ot1982,@dmin1234
+linux,192.168.0.254,root,Kb0=Jt5{Ri4*,,root1234
+linux,192.168.1.1,xavier,Kb0=Jt5{Ri4*,root1234,test1234

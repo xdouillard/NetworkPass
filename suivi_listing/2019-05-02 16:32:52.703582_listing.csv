@@ -1,0 +1,7 @@
+server,ip,user,pw_user,pw_suser,old_pw
+cisco,192.168.0.1,admin,Wd3=Yo8}Vm5+,,Ai5~Yc8*Jq7}
+cisco,192.168.0.2,admin,Wd3=Yo8}Vm5+,,Ai5~Yc8*Jq7}
+cisco,192.168.0.3,admin,Wd3=Yo8}Vm5+,,Ai5~Yc8*Jq7}
+linux,192.168.0.11,xavier,Wd3=Yo8}Vm5+,R@ot1982,Ai5~Yc8*Jq7}
+linux,192.168.0.254,root,Wd3=Yo8}Vm5+,,Ai5~Yc8*Jq7}
+linux,192.168.1.1,xavier,Wd3=Yo8}Vm5+,root1234,Ai5~Yc8*Jq7}

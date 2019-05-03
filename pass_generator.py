@@ -9,7 +9,7 @@ def genpass():
     lowercase = "abcdefghijklmnopqrstuvwxyz"
     uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     nums = "1234567890"
-    special_char = "@#$%^*=+-~/[]{}"
+    special_char = "@#$%*=+-"
 
     #Variables du mot de passe
     password = ''

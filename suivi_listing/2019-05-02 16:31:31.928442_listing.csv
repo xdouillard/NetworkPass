@@ -1,0 +1,7 @@
+server,ip,user,pw_user,pw_suser,old_pw
+cisco,192.168.0.1,admin,Ai5~Yc8*Jq7},,Wr7}Lb3[Fh8*
+cisco,192.168.0.2,admin,Ai5~Yc8*Jq7},,Wr7}Lb3[Fh8*
+cisco,192.168.0.3,admin,Ai5~Yc8*Jq7},,Wr7}Lb3[Fh8*
+linux,192.168.0.11,xavier,Ai5~Yc8*Jq7},R@ot1982,Wr7}Lb3[Fh8*
+linux,192.168.0.254,root,Ai5~Yc8*Jq7},,Wr7}Lb3[Fh8*
+linux,192.168.1.1,xavier,Ai5~Yc8*Jq7},root1234,Wr7}Lb3[Fh8*
