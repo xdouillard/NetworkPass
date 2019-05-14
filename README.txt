@@ -13,7 +13,10 @@ En plus de la modification du mot de passe, le script génére deux fichiers CSV
   - un fichier "dat_heure_listing.csv", ce fichier sera crée dans un répertoire nommé "suivi listing"
     Il reprendra ligne par ligne le fichier "listing" pour être réécrit avec modification de mot de passe si la mise à jour à fonctionner ou à l'identique si la mise à jour n'a pas fonctionné
     En tout fin de mise à jour quand tous les matériels réseaux ont été passés en revu, ce fichier "dat_heure_listing.csv" remplace le fichier "listing.csv" dans le répertoire principal
-    
+
+Axe d'amélioration :
+  - Passée une ligne dans le fichier listing.csv si celle-ci commence par #, mais l'écrire tout de même dans dans le fichier "dat_heure_listing.csv"
+
 Contributing
 1 - Fork it
 2 - Create your feature branch (git checkout -b my-new-feature)
