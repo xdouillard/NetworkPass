@@ -15,8 +15,25 @@ En plus de la modification du mot de passe, le script génére deux fichiers CSV
     En tout fin de mise à jour quand tous les matériels réseaux ont été passés en revu, ce fichier "dat_heure_listing.csv" remplace le fichier "listing.csv" dans le répertoire principal
 
 Axe d'amélioration :
-  - Passée une ligne dans le fichier listing.csv si celle-ci commence par #, mais l'écrire tout de même dans dans le fichier "dat_heure_listing.csv"
+  - Ignorer une ligne dans le fichier listing.csv si celle-ci commence par #, mais l'écrire tout de même dans dans le fichier "dat_heure_listing.csv"
 
+This script is intended to automatically update the passwords of the different network elements (firewall, routers, switches ...)
+The main script "Networkpass" works with several sub-scripts:
+  - Genpass: password generator
+  - pass _ ****** _ change: change the password according to the type of material, the * will be changed to cisco, linux, zyxel ... Depending on each type, it can be create a modification script.
+
+The network hardware must be listed in a CSV file named "listing.csv".
+
+In addition to changing the password, the script generates two CSV files:
+  - a file "date_heure_journal.csv", this file will be created in a directory named "monitoring"
+    It lists all the network hardware with its update, update successfully, or the error for which the password update was unable to do so.
+  - a file "dat_heure_listing.csv", this file will be created in a directory named "follow listing"
+    It will resume line by line the file "listing" to be rewritten with modification of password if the update to function or identically if the update did not work
+    At the very end of the update when all network devices have been reviewed, this file "dat_heure_listing.csv" replaces the file "listing.csv" in the main directory
+
+Area for improvement :
+  - Ignore a line in the listing.csv file if it starts with #, but write it in the file "dat_heure_listing.csv"
+  
 Contributing
 1 - Fork it
 2 - Create your feature branch (git checkout -b my-new-feature)
