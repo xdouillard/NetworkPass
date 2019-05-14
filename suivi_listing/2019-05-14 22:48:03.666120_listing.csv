@@ -1,0 +1,7 @@
+server,ip,user,pw_user,pw_suser,old_pw
+cisco,192.168.0.1,admin,Pq5*Su1*Sd9*,,Kg0$Ix4*Jp9%
+cisco,192.168.0.2,admin,Pq5*Su1*Sd9*,,Kg0$Ix4*Jp9%
+cisco,192.168.0.3,admin,Pq5*Su1*Sd9*,,Kg0$Ix4*Jp9%
+linux,192.168.0.11,xavier,Kg0$Ix4*Jp9%,R@ot1982,Mj9*At4-Vn0$
+linux,192.168.0.254,root,Kg0$Ix4*Jp9%,,Mj9*At4-Vn0$
+linux,192.168.1.1,xavier,Kg0$Ix4*Jp9%,root1234,Mj9*At4-Vn0$
