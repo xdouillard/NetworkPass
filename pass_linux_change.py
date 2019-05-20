@@ -6,7 +6,7 @@ import socket #Gestion de la lecture des ports
 import sys #Options système
 import time #Mise en place de temporisation
 import csv #Permet la gestion des fichiers CSV
-import paramiko #Gestion de la connection ssh
+import paramiko #Gestion de la connexion ssh
 
 #Récupération des arguments du fichiers CSV envoyés par le script principal
 IP_ADDRESS = sys.argv[1]
