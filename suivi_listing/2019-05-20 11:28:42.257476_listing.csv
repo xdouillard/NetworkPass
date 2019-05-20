@@ -1,0 +1,7 @@
+server,ip,user,pw_user,pw_suser,old_pw
+cisco,192.168.0.1,admin,Aw5@Kf7%Qm9*,,Xg5%By8@Mv4%
+cisco,192.168.0.2,admin,Aw5@Kf7%Qm9*,,Xg5%By8@Mv4%
+cisco,192.168.0.3,admin,Aw5@Kf7%Qm9*,,Xg5%By8@Mv4%
+linux,192.168.0.11,xavier,Aw5@Kf7%Qm9*,R@ot1982,Xg5%By8@Mv4%
+linux,192.168.0.254,root,Aw5@Kf7%Qm9*,,Xg5%By8@Mv4%
+linux,192.168.1.1,xavier,Aw5@Kf7%Qm9*,root1234,Xg5%By8@Mv4%
