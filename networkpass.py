@@ -34,7 +34,7 @@ with open(FILENAME, "r") as LISTING:
             #Liste des arguments à transférer au script
             ARGV = [line["ip"], line["user"], line["pw_user"], NEW_PW, JOURNAL, line["pw_suser"]]
             #Ouverture du script, défition du lecteur, script à lancer + arguments
-            ret = subprocess.run(["python3", SCRIPT_TO_USE] + ARGV, check=True)
+            ret = subprocess.run(["python3", SCRIPT_TO_USE] + ARGV)
             #Condition en fonction du retour du script, 0 : modifications effectuées
             if ret.returncode == 0:
                 CSV_WRITER.writerow({
