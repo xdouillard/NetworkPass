@@ -1,7 +1,0 @@
-server,ip,user,pw_user,pw_suser,old_pw
-cisco,192.168.0.1,admin,Wr7}Lb3[Fh8*,,Xp8*Ox0}Xi3=
-cisco,192.168.0.2,admin,Wr7}Lb3[Fh8*,,Xp8*Ox0}Xi3=
-cisco,192.168.0.3,admin,Wr7}Lb3[Fh8*,,Xp8*Ox0}Xi3=
-linux,192.168.0.11,xavier,Wr7}Lb3[Fh8*,R@ot1982,Xp8*Ox0}Xi3=
-linux,192.168.0.254,root,Wr7}Lb3[Fh8*,,Xp8*Ox0}Xi3=
-linux,192.168.1.1,xavier,Wr7}Lb3[Fh8*,root1234,Xp8*Ox0}Xi3=

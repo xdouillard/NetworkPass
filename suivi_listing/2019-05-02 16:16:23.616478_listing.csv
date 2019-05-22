@@ -1,7 +1,0 @@
-server,ip,user,pw_user,pw_suser,old_pw
-cisco,192.168.0.1,admin,Ck8[Pm2@An1},,Kb0=Jt5{Ri4*
-cisco,192.168.0.2,admin,Ck8[Pm2@An1},,Kb0=Jt5{Ri4*
-cisco,192.168.0.3,admin,Ck8[Pm2@An1},,Kb0=Jt5{Ri4*
-linux,192.168.0.11,xavier,Ck8[Pm2@An1},R@ot1982,Kb0=Jt5{Ri4*
-linux,192.168.0.254,root,Ck8[Pm2@An1},,Kb0=Jt5{Ri4*
-linux,192.168.1.1,xavier,Ck8[Pm2@An1},root1234,Kb0=Jt5{Ri4*

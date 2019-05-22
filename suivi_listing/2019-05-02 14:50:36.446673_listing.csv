@@ -1,7 +1,0 @@
-server,ip,user,pw_user,pw_suser,old_pw
-cisco,192.168.0.1,admin,Ib3@Ir2[Vw8{,,admin1234
-cisco,192.168.0.2,admin,Ib3@Ir2[Vw8{,,admin1234
-cisco,192.168.0.3,admin,Ib3@Ir2[Vw8{,,admin1234
-linux,192.168.0.11,xavier,Ib3@Ir2[Vw8{,R@ot1982,@dmin1234
-linux,192.168.0.254,root,Ib3@Ir2[Vw8{,,root1234
-linux,192.168.1.1,xavier,Ib3@Ir2[Vw8{,root1234,test1234

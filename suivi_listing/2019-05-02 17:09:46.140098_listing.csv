@@ -1,7 +1,0 @@
-server,ip,user,pw_user,pw_suser,old_pw
-cisco,192.168.0.1,admin,Gv1{Gz5$Tv2*,,Cn6%Yq9}Ts3$
-cisco,192.168.0.2,admin,Gv1{Gz5$Tv2*,,admin1234
-cisco,192.168.0.3,admin,Gv1{Gz5$Tv2*,,Cn6%Yq9}Ts3$
-linux,192.168.0.11,xavier,Bw1$Ia3/Bf7{,R@ot1982,Wd3=Yo8}Vm5+
-linux,192.168.0.254,root,Bw1$Ia3/Bf7{,,Wd3=Yo8}Vm5+
-linux,192.168.1.1,xavier,Bw1$Ia3/Bf7{,root1234,Wd3=Yo8}Vm5+

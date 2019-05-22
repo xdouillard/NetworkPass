@@ -1,7 +1,0 @@
-server,ip,user,pw_user,pw_suser,old_pw
-cisco,192.168.0.1,admin,Bn4%Kx5#Er3%,,Pq5*Su1*Sd9*
-cisco,192.168.0.2,admin,Bn4%Kx5#Er3%,,Pq5*Su1*Sd9*
-cisco,192.168.0.3,admin,Bn4%Kx5#Er3%,,Pq5*Su1*Sd9*
-linux,192.168.0.11,xavier,Bn4%Kx5#Er3%,R@ot1982,admin1234
-linux,192.168.0.254,root,Bn4%Kx5#Er3%,,Root1234
-linux,192.168.1.1,xavier,Bn4%Kx5#Er3%,root1234,admin1234

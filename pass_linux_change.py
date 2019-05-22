@@ -16,10 +16,10 @@ NEW_PW = sys.argv[4]
 JOURNAL = sys.argv[5]
 PW_ROOT = sys.argv[6]
 
-#Connection SSH et modification du mot de passe
+#Connexion SSH et modification du mot de passe
 SSH_CLIENT = paramiko.SSHClient()
 SSH_CLIENT.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-try: #Ouverture de la connection
+try: #Ouverture de la connexion
     SSH_CLIENT.connect(IP_ADDRESS, 22, USERNAME, PASSWORD, look_for_keys=False, allow_agent=False)
 #Gestion de l'erreur d'authentification
 except paramiko.AuthenticationException:
@@ -27,7 +27,7 @@ except paramiko.AuthenticationException:
     with open(JOURNAL, "a") as suivi: #Ecriture dans le journal
         CSV_WRITER = csv.writer(suivi)
         CSV_WRITER.writerow([IP_ADDRESS, RESULT])
-    sys.exit(1) #Renvoi de l'erreur 1
+    sys.exit(1) #Arrêt du scrit et renvoi de l'erreur 1
 #Gestion de l'erreur de port (matériel non joignable)
 except socket.error:
     RESULT = "Socket error"
@@ -48,8 +48,6 @@ else:
         #Modification du mot de passe
         REMOTE_CONNECTION.send("echo {0}:{1} | chpasswd\n".format(USERNAME, NEW_PW))
         time.sleep(1)
-        #REMOTE_CONNECTION.send("history -c\n") #Supprime l'historique des commandes
-        #time.sleep(0.5)
         #Variable validant le changement de mot de passe
         FINAL = "Le mot de passe du matériel {1} a bien été changé : {0}".format(NEW_PW, IP_ADDRESS)
         REMOTE_CONNECTION.send("exit\n")
@@ -58,14 +56,12 @@ else:
         #Modification du mot de passe
         REMOTE_CONNECTION.send("echo {0}:{1} | chpasswd\n".format(USERNAME, NEW_PW))
         time.sleep(1)
-        #REMOTE_CONNECTION.send("history -c\n") #Supprime l'historique des commandes
-        #time.sleep(0.5)
         #Variable validant le changement de mot de passe
         FINAL = "Le mot de passe du matériel {1} a bien été changé : {0}".format(NEW_PW, IP_ADDRESS)
         REMOTE_CONNECTION.send("exit\n")
 with open(JOURNAL, "a") as suivi: #Ecriture dans le journal
     CSV_WRITER = csv.writer(suivi)
     CSV_WRITER.writerow([IP_ADDRESS, RESULT, FINAL])
-#Fermeture de la connection
+#Fermeture de la connexion
 #SSH_CLIENT.close
 sys.exit(0)

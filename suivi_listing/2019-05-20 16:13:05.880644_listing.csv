@@ -1,7 +1,0 @@
-server,ip,user,pw_user,pw_suser,old_pw
-cisco,192.168.0.1,admin,We0+Jc2%Vt5-,,Mf9*Yx9*Lp7*
-cisco,192.168.0.2,admin,We0+Jc2%Vt5-,,Wc2@Mr8@Kq0+
-cisco,192.168.0.3,admin,We0+Jc2%Vt5-,,Mf9*Yx9*Lp7*
-linux,192.168.0.11,xavier,We0+Jc2%Vt5-,R@ot1982,Mf9*Yx9*Lp7*
-linux,192.168.0.254,root,We0+Jc2%Vt5-,,Root1234
-linux,192.168.1.1,xavier,We0+Jc2%Vt5-,root1234,Mf9*Yx9*Lp7*
