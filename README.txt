@@ -16,6 +16,7 @@ En plus de la modification du mot de passe, le script génére deux fichiers CSV
 
 Axe d'amélioration :
   - Ignorer une ligne dans le fichier listing.csv si celle-ci commence par #, mais l'écrire tout de même dans dans le fichier "dat_heure_listing.csv"
+  - Amélioration générale du code, mise en place de Programmation Orienté Objet
 
 This script is intended to automatically update the passwords of the different network elements (firewall, routers, switches ...)
 The main script "Networkpass" works with several sub-scripts:
